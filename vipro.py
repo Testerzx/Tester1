@@ -12,7 +12,7 @@ import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,
 
 vipro = LINETCR.LINE()#Andrey117
 #vipro.login(qr=True)
-vipro.login(token='EtrLv8ZTZGAyLlTZ3oNa.e0jPW1I7PFcTWq5e6PzB6G.6PGrRrn5IBx4kXzvTbUfZtAnhZs8L0jAgXtByTaW2YM=')
+vipro.login(token='EvxTB17f3z7FbnpA0Ama.e0jPW1I7PFcTWq5e6PzB6G.zaKE5dq391xMfv63ghnpQucUaptrHAZy93IyRwXtQkg=')
 vipro.loginResult()
 print "Vipro-Login Success\n\n=====[Sukses Login]====="
 
@@ -49,7 +49,7 @@ selfMessage ="""
 ╠➩〘Micdel @〙
 ╠➩〘Miclist〙
 ╠═════════════════════════
-║             💠 By : People Jaman Now 💠
+║             💠 By : SUEP 💠
 ║    
 ╚═════════════════════════
 """
@@ -69,7 +69,7 @@ botMessage ="""
 ╠➩〘@bye〙
 ╠➩〘Bot on/off〙
 ╠═════════════════════════
-║           💠 By : People Jaman Now 💠
+║           💠 By : SUEP 💠
 ║    
 ╚═════════════════════════
 """
@@ -108,7 +108,7 @@ mediaMessage ="""
 ╠➩〘Id@th Text (Translate ID Ke TH〙
 ╠➩〘En@id Text (Translate En Ke ID〙
 ╠═════════════════════════
-║     💠 By : People Jaman Now 💠
+║     💠 By : SUEP 💠
 ║    
 ╚═════════════════════════
 """
@@ -143,7 +143,7 @@ groupMessage ="""
 ╠➩〘Getgroup image〙
 ╠➩〘Urlgroup Image〙
 ╠═════════════════════════
-║      💠 By : People Jaman Now 💠
+║      💠 By : SUEP 💠
 ║    
 ╚═════════════════════════
 """
@@ -162,7 +162,7 @@ setMessage ="""
 ╠➩〘Sticker on〙
 ╠➩〘Simisimi on/off〙
 ╠═════════════════════════
-║     💠 By : People Jaman Now 💠
+║     💠 By : SUEP 💠
 ║   
 ╚═════════════════════════
 """
@@ -181,7 +181,7 @@ creatorMessage ="""
 ╠➩〘Bot restart〙
 ╠➩〘Turn off〙
 ╠═════════════════════════
-║     💠 By : People Jaman Now 💠
+║     💠 By : SUEP 💠
 ║    
 ╚═════════════════════════
 """
@@ -222,7 +222,7 @@ adminMessage ="""
 ╠➩〘Respon3 on/off〙
 ╠➩〘Responkick on/off〙
 ╠═════════════════════════
-║    💠 By : People Jaman Now 💠
+║    💠 By : SUEP 💠
 ║    
 ╚═════════════════════════
 """
@@ -243,7 +243,7 @@ helpMessage ="""
 ╠➩〘Speed test〙
 ╠➩〘Status〙
 ╠═════════════════════════
-║   💠 By : People Jaman Now 💠
+║   💠 By : SUEP 💠
 ║    
 ╚═════════════════════════
 """
@@ -871,7 +871,7 @@ def bot(op):
                  if wait["detectMention"] == True:
                      contact = vipro.getContact(msg.from_)
                      cName = contact.displayName
-                     balas = ["Dont Tag!! Lagi Sibuk",cName + " Ngapain Ngetag?",cName + " Nggak Usah Tag-Tag! Kalo Penting Langsung Pc Aja","Dia Lagi Off", cName + " Kenapa Tag Saya?","Dia Lagi Tidur\nJangan Di Tag " + cName, "Jangan Suka Tag Gua " + cName, "Kamu Siapa " + cName + "?", "Ada Perlu Apa " + cName + "?","Woii " + cName + " Jangan Ngetag, Riibut!"]
+                     balas = ["Dont Tag!! Lagi Sibuk",cName + " Ngapain Ngetag?",cName + " Nggak Usah Tag-Tag! Kalo Kangen Pc Aja","Dia Lagi Off", cName + " Kenapa Tag Saya?","Dia Lagi Tidur\nJangan Di Tag " + cName, "Jangan Suka Tag Gua " + cName, "Kamu Siapa " + cName + "?", "Ada Perlu Apa " + cName + "?","Woii " + cName + " Jangan Ngetag, Riibut!"]
                      ret_ = random.choice(balas)
                      name = re.findall(r'@(\w+)', msg.text)
                      mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -885,7 +885,7 @@ def bot(op):
                  if wait["detectMention2"] == True:          
                     contact = vipro.getContact(msg.from_)
                     cName = contact.displayName
-                    balas = ["Sekali lagi nge tag gw sumpahin jomblo seumur hidup!","Nggak Usah Tag-Tag! Kalo Penting Langsung Pc Aja","Woii " + cName + " Jangan Ngetag, Riibut!"]
+                    balas = ["Sekali lagi nge tag gw sumpahin jomblo seumur hidup!","Emang sulit jika jomblo","Woii " + cName + " Jangan Ngetag, Riibut!"]
                     ret_ = random.choice(balas)
                     name = re.findall(r'@(\w+)', msg.text)
                     mention = ast.literal_eval(msg.contentMetadata['MENTION'])
