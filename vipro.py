@@ -871,7 +871,7 @@ def bot(op):
                  if wait["detectMention"] == True:
                      contact = vipro.getContact(msg.from_)
                      cName = contact.displayName
-                     balas = ["Dont Tag!! Lagi Sibuk",cName + " Ngapain Ngetag?",cName + " Nggak Usah Tag-Tag! Kalo Kangen Pc Aja","Dia Lagi Off", cName + " Kenapa Tag Saya?","Dia Lagi Tidur\nJangan Di Tag " + cName, "Jangan Suka Tag Gua " + cName, "Kamu Siapa " + cName + "?", "Ada Perlu Apa " + cName + "?","Woii " + cName + " Jangan Ngetag, Riibut!"]
+                     balas = ["Dont Tag!! Lagi Sibuk",cName + " Ngapain Ngetag doi lagi sibuk",cName + " jangan Tag-Tag Kalo Kangen Pc Aja doi pasti bales ","Doi Lagi Off", cName + " Kenapa Tag Saya?","Dia Lagi Tidur\nJangan Di Tag " + cName, "Jangan Suka Tag Gua " + cName, "Kamu Siapa " + cName + "?", "Ada Perlu Apa " + cName + "?","Woii " + cName + " Jangan Ngetag, Riibut!"]
                      ret_ = random.choice(balas)
                      name = re.findall(r'@(\w+)', msg.text)
                      mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -885,7 +885,7 @@ def bot(op):
                  if wait["detectMention2"] == True:          
                     contact = vipro.getContact(msg.from_)
                     cName = contact.displayName
-                    balas = ["Sekali lagi nge tag gw sumpahin jomblo seumur hidup!","Emang sulit jika jomblo","Woii " + cName + " Jangan Ngetag, Riibut!"]
+                    balas = ["iya kenapa doi lagi sibuk !","ngapain tag doi lagi sibuk","Woii " + cName + " Jangan Ngetag trus doi lagi sibuk"]
                     ret_ = random.choice(balas)
                     name = re.findall(r'@(\w+)', msg.text)
                     mention = ast.literal_eval(msg.contentMetadata['MENTION'])
